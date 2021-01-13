@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#f1f1f2"
+    android:id="@+id/parent_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pastordersbg"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_marginLeft="35dp"
+            android:layout_height="80dp"
+            android:id="@+id/dpimage"
+            android:src="@drawable/carimgdelete"/>
+
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="80dp"
+            android:id="@+id/user"
+
+            android:src="@drawable/userimgdelete"/>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+
+            android:layout_toRightOf="@+id/dpimage"
+            android:text="Nick White"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/montserratsemibold"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/delete"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/edit"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/delete"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/pencil"/>
+
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/dpimage"
+            android:text="Mercedes Benz 2015 White"
+            android:textColor="@color/darkblue"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/dpimage"
+            android:text="334, North Street,CA"
+            android:textColor="@color/darkblue"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

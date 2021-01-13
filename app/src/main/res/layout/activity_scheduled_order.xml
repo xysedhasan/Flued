@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/parent"
+    android:padding="15dp"
+
+    android:background="#f1f1f2"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ScheduledOrderActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/darkblue"
+        android:text="Scheduled Orders"
+        android:fontFamily="@font/montserratmedium"
+        />
+
+    <include
+        layout="@layout/layoutlistitscheduledorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" />
+
+    <include
+        layout="@layout/layoutlistitscheduledorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" />
+
+    <include
+        layout="@layout/layoutlistitscheduledorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" />
+
+    <include
+        layout="@layout/layoutlistitscheduledorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp" />
+
+
+
+</LinearLayout>

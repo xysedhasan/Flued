@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/parent"
+    android:padding="15dp"
+    android:background="@color/white"
+
+    tools:context=".ThankyouActivity">
+
+
+    <ImageView
+        android:id="@+id/intro_img"
+        android:layout_width="wrap_content"
+        android:layout_height="222dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/besuretoopengasdoor"
+        android:layout_marginTop="100dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+
+    <TextView
+        android:id="@+id/intro_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Thank you!"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginTop="100dp"
+
+        android:textSize="25dp"
+        android:textColor="#304169"
+        android:textStyle="bold"
+
+         />
+
+    <TextView
+        android:lineSpacingExtra="16dp"
+        android:id="@+id/intro_description"
+        android:textColor="#304169"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Please be sure to leave gas door open!"
+        android:textAlignment="center"
+  />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ok"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/finishbuttonstyle"
+        android:text="ok"
+        android:fontFamily="@font/montserratbold"
+
+
+        android:textColor="@color/white"
+        />
+
+
+
+</LinearLayout>

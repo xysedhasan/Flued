@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/white"
+    tools:context=".ReceiptActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/darkblue"
+        android:text="Job Complete"
+        android:fontFamily="@font/montserratbold"
+        />
+
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgreceit"
+        android:orientation="vertical"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Receipt "
+            android:fontFamily="@font/montserratbold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="#SDFD34453223"
+
+            android:fontFamily="@font/montserratregular"
+            />
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Provider --------------------------"
+            android:fontFamily="@font/montserratregular"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="FuelI'd"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:gravity="right"
+
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="GST --------------------"
+
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="SDFD34453223"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="Phone No ------------"
+            android:maxLines="1"
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="2342334453223"
+            android:layout_weight="1"
+
+            android:maxLines="1"
+            android:gravity="right"
+
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Bill No -------------------"
+
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="234234453223"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Transaction Id ----------"
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="3444453223"
+            android:layout_weight="1"
+            android:gravity="right"
+
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Vhil No -----------------------"
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="S453223"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Time -----------------------------"
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="09:23"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:gravity="right"
+
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Date ---------------------"
+
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="12/11/2021"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Nozi No ------------------"
+
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="1"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Fuel ----------------------------"
+
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="Petrol"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="Density -----------"
+
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="823.1kg/m3"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:maxLines="1"
+            android:text="Preset ---------------"
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:maxLines="1"
+            android:text="Non Preset"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:maxLines="1"
+            android:text="Rate ---------------------------"
+
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:textColor="@color/darkblue"
+            android:text="10$"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:maxLines="1"
+            android:text="Sale ---------------------------"
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="$1456"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:maxLines="1"
+            android:text="Volume --------------------"
+
+            android:fontFamily="@font/montserratregular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/darkblue"
+            android:text="15 Lts"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:gravity="right"
+            android:fontFamily="@font/montserratbold"
+
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/done"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratbold"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/finishbuttonstyle"
+        android:text="Done"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>

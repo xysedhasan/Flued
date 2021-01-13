@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:background="#f1f1f2"
+    android:id="@+id/parent_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pastordersbg"
+        android:padding="20dp"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/dpimage"
+            android:src="@drawable/logod"/>
+
+        <TextView
+            android:id="@+id/ordernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/dpimage"
+            android:text="#9334534"
+            android:textColor="#9596AD"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/dpimage"
+            android:text="15 Liters Fuel"
+            android:textColor="@color/darkblue"
+            android:fontFamily="@font/montserratsemibold"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/dpimage"
+            android:text="12-09-2021|09:26 PM"
+            android:textColor="@color/darkblue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_toRightOf="@+id/dpimage"
+            android:text="$100"
+            android:textColor="@color/lightgreen"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
