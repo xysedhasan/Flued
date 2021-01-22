@@ -14,7 +14,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="16sp"
+        android:padding="15dp"
         android:textColor="@color/darkblue"
         android:text="Past Orders"
         android:fontFamily="@font/montserratmedium"

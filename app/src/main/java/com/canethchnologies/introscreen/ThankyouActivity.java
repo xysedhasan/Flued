@@ -18,7 +18,7 @@ public class ThankyouActivity extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ThankyouActivity.this,ReceiptActivity.class);
+                Intent intent = new Intent(ThankyouActivity.this,MapsActivity.class);
                 startActivity(intent);
             }
         });

@@ -18,10 +18,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:fontFamily="@font/montserratmedium"
     android:background="#ffffff">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tool"
+        app:titleTextColor="@color/darkblue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
@@ -31,9 +33,14 @@
         app:layout_constraintBottom_toTopOf="@id/map"
         >
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserratbold"
+            android:textColor="@color/darkblue"
+            android:layout_marginRight="70dp"
             android:text="Home"/>
 
     </androidx.appcompat.widget.Toolbar>
@@ -51,7 +58,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="300dp"
         android:background="@drawable/destinationbg"
         app:layout_constraintBottom_toBottomOf="@+id/map"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,59 +66,64 @@
 
         <TextView
             android:id="@+id/intro_description"
-            android:layout_width="339dp"
-            android:layout_height="37dp"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="16dp"
-
+            android:fontFamily="@font/montserratregular"
             android:maxLines="2"
             android:lineSpacingExtra="16dp"
-            android:text="Select you location by tapping GPS button or enter
-            manually"
+            android:text="Select your location by tapping GPS button or enter manually"
             android:textColor="#304169"
-            app:layout_constraintEnd_toEndOf="parent"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/intro_title" />
 
         <EditText
             android:id="@+id/edittext_username"
-            android:layout_width="300dp"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/destinationbgtv"
-
-            android:hint="Enter destination"
+            android:hint=" Enter destination"
             android:inputType="textEmailAddress"
-
+            android:layout_marginStart="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginEnd="28dp"
             android:paddingLeft="2dp"
-            app:layout_constraintBottom_toTopOf="@+id/cancel"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/schedulebuton"
+
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/intro_description" />
     <androidx.appcompat.widget.AppCompatButton
+
         android:id="@+id/schedule"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/nextbuttonstyle"
-        android:text="Schedule"
-        android:textColor="#1EBCD4"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/finishbuttonstyle"
+        android:text="Order"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/cancel"
+        android:layout_marginTop="20dp"
+        android:id="@+id/schedulebuton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/cancelbuttonstyle"
-        android:text="Cancel"
-        android:textColor="#FF0000"
+        android:background="@drawable/nextbuttonstyle"
+        android:text="Schedule"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="28dp"
+        android:textColor="@color/lightgreen"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/schedule"
-        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent" />
 
 
@@ -136,6 +148,8 @@
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
+
+
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
@@ -145,6 +159,44 @@
         android:background="#fff"
         app:headerLayout="@layout/nav_header_main"
         app:theme="@style/NavigationDrawerStyle"
-        app:menu="@menu/main_menu" />
+        app:menu="@menu/main_menu" >
+        <RelativeLayout
+            android:id="@+id/logoutlt"
+            android:layout_gravity="bottom"
+            android:background="#20191d1e"
+            android:layout_width="match_parent"
+            android:paddingBottom="2dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="2dp"
+            android:orientation="horizontal"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/logoutimg"
+                android:layout_centerVertical="true"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/logout"
+                />
+
+            <TextView
+                android:id="@+id/txtCompanyName"
+                android:layout_width="match_parent"                              android:layout_marginLeft="@dimen/margin3dp"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/darkblue"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserratmedium"
+                android:layout_toRightOf="@+id/logoutimg"
+                android:layout_centerVertical="true"
+                 />
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

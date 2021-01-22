@@ -100,10 +100,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     }
                     break;
-                    case R.id.logout: {
 
-                    }
-                    break;
 
                     default:
                         return true;

@@ -13,6 +13,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -31,6 +32,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     ActionBarDrawerToggle t;
     NavigationView nv;
     Toolbar toolbar;
+    RelativeLayout logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +42,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         toolbar = (Toolbar) findViewById(R.id.tool);
         navigation();
 
+        logout = findViewById(R.id.logoutlt);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MapsActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
-        schedule = findViewById(R.id.schedule);
+        schedule = findViewById(R.id.schedulebuton);
         schedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,6 +64,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
     }
 
     /**
@@ -141,7 +157,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     case R.id.scheduledeliveries: {
                         Intent intent;
-                        intent = new Intent(MapsActivity.this, ScheduleActivity.class);
+                        intent = new Intent(MapsActivity.this, ScheduledOrderActivity.class);
                         startActivity(intent);
                     }
                     break;
@@ -166,12 +182,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                     }
                     break;
-                    case R.id.logout: {
 
-                        Intent intent = new Intent(MapsActivity.this, LoginActivity.class);
-                        startActivity(intent);
-                    }
-                    break;
 
                     default:
                         return true;

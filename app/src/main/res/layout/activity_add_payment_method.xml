@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:id="@+id/parent"
+    android:padding="15dp"
+    tools:context=".AddPaymentMethodActivity">
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/darkblue"
+        android:text="Payment Info"
+        android:fontFamily="@font/montserratmedium"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addpaymentbg"
+                android:padding="20dp"
+                >
+
+
+            <RadioButton android:id="@+id/visa"
+                android:layout_width="29dp"
+                android:layout_height="wrap_content"
+
+                />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/visa"
+                    android:text="Cards"
+                    android:textColor="@color/darkblue"
+                    android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/visapay"
+                    android:layout_alignParentEnd="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/addpaymentbg"
+                android:padding="20dp"
+                >
+
+
+                <RadioButton android:id="@+id/applepayradio"
+                    android:layout_width="29dp"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:id="@+id/applepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/applepayradio"
+                    android:text="Apple Pay"
+                    android:textColor="@color/darkblue"
+                    android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/applepay"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignRight="@id/applepay"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/addpaymentbg"
+                android:padding="20dp"
+                >
+
+
+                <RadioButton android:id="@+id/googlepayradio"
+                    android:layout_width="29dp"
+                    android:layout_height="wrap_content"
+
+                    />
+
+                <TextView
+                    android:id="@+id/googlepaytv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/googlepayradio"
+                    android:text="Google Pay"
+                    android:textColor="@color/darkblue"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/googlepay"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignRight="@id/applepay"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/addpaymentbg"
+                android:padding="20dp"
+                >
+
+
+                <RadioButton android:id="@+id/paypalradio"
+                    android:layout_width="29dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/payapltv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/paypalradio"
+                    android:text="PayPal"
+                    android:textColor="@color/darkblue"
+                    android:textSize="22sp" />
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/paypal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignRight="@id/payapltv"/>
+            </RelativeLayout>
+
+
+
+
+    </RadioGroup>
+
+
+
+
+</LinearLayout>

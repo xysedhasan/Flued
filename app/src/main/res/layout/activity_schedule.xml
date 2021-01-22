@@ -15,9 +15,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="16sp"
         android:textColor="@color/darkblue"
-        android:fontFamily="@font/montserratbold"
+        android:fontFamily="@font/montserratmedium"
         android:text="Schedule Delivery"
         />
 
@@ -108,7 +108,30 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
+<!--    <TextView-->
 
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:text="Select Car"-->
+<!--        android:textColor="@color/darkblue"-->
+<!--        android:textSize="20sp"-->
+<!--        android:gravity="left"-->
+<!--        />-->
+    <Spinner
+        android:id="@+id/spnnr_color_dissdcipline_register"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:entries="@array/country_arrays"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:prompt="@string/country_prompt"
+        android:layout_marginBottom="1.5dp">
+
+    </Spinner>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/submit"

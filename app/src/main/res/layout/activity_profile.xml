@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".ProfileActivity">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="104dp"
+        android:layout_height="95dp"
         android:src="@drawable/profilebg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:src="@drawable/uploadphoto"
+        android:src="@drawable/dottedbordercircle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserratsemibold"
         android:text="Nick White"
+        android:layout_marginTop="10dp"
         android:textColor="@color/darkblue"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +47,7 @@
         android:layout_height="wrap_content"
 
         android:src="@drawable/member"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="10dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -151,21 +153,83 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
         android:text="My Cars"
+        android:fontFamily="@font/montserratmedium"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayoutName" />
 
 
+    <include
+
+        android:id="@+id/include2"
+        layout="@layout/layoutlistitmycar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/addcariv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
     <ImageView
         android:id="@+id/addcariv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
 
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/addcar"
-        app:layout_constraintBottom_toBottomOf="parent" />
+
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/dottedborderrectangle"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+
+        android:layout_height="50dp"
+        android:src="@drawable/upload"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/addcariv"
+        app:layout_constraintTop_toTopOf="@+id/addcariv" />
+
+    <TextView
+        android:id="@+id/addcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserratmedium"
+        android:text="Add Car"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/tap"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/addcariv" />
+
+    <TextView
+        android:id="@+id/tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/montserratmedium"
+        android:text="Tap here to add a car you own"
+        android:textSize="14sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addcariv"
+
+        app:layout_constraintEnd_toEndOf="@+id/addcariv"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

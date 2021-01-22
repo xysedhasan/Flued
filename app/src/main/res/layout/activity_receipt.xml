@@ -14,10 +14,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textColor="@color/darkblue"
         android:text="Job Complete"
-        android:fontFamily="@font/montserratbold"
+        android:fontFamily="@font/montserratmedium"
         />
 
 
@@ -533,12 +533,68 @@
 
     </LinearLayout>
 
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center"
+
+        >
+        <LinearLayout
+            android:background="@drawable/mycarbg"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:src="@drawable/download"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="@drawable/mycarbg"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:src="@drawable/share"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:background="@drawable/mycarbg"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="50dp">
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:src="@drawable/pdf"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/done"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserratbold"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/finishbuttonstyle"
         android:text="Done"
         android:textColor="@color/white"

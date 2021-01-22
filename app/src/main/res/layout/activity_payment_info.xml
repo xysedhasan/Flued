@@ -8,78 +8,96 @@
     android:gravity="center_horizontal"
     android:id="@+id/parent"
     android:padding="15dp"
+
     tools:context=".PaymentInfoActivity">
 
 
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+
+        android:textColor="@color/darkblue"
+        android:text="Payment Info"
+        android:fontFamily="@font/montserratmedium"
+
+        android:layout_centerHorizontal="true"
+        />
+
     <RelativeLayout
+        android:layout_marginTop="60dp"
         android:id="@+id/card"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:background="@color/lightgreen"
+        android:layout_height="220dp"
+        android:background="@drawable/cardsbg"
 
         >
 
         <RelativeLayout
-            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/cardlayers"
-            android:padding="20dp"
-            >
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/cardlayers">
 
             <ImageView
                 android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/mastercard"
-                />
+                android:layout_height="60dp"
+
+                android:src="@drawable/mastercard" />
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
                 android:id="@+id/delete"
-                android:layout_marginTop="30dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_delete"/>
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_delete" />
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="30dp"
                 android:id="@+id/edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_alignParentRight="true"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
                 android:layout_toLeftOf="@+id/delete"
-                android:layout_marginRight="50dp"
-                android:src="@drawable/ic_pen"/>
+                android:src="@drawable/pencil" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4332 2343 1234 4543"
-                android:layout_marginTop="100dp"
-                android:fontFamily="@font/montserratmedium"
-                android:textSize="28dp"
-                android:textColor="@color/white"
                 android:layout_centerHorizontal="true"
-                />
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/montserratmedium"
+                android:text="4332  2343  1234  4543"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="02-11-21 08:25"
                 android:layout_alignParentBottom="true"
-                android:textSize="18dp"
                 android:fontFamily="@font/montserratmedium"
+                android:text="02-11-21 08:25"
                 android:textColor="@color/white"
+                android:textSize="18dp"
 
                 />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nick White"
-                android:fontFamily="@font/montserratmedium"
-                android:layout_alignParentBottom="true"
-                android:textSize="18dp"
-                android:textColor="@color/white"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserratmedium"
+                android:text="Nick White"
+                android:textColor="@color/white"
+                android:textSize="18dp"
 
                 />
 
@@ -87,12 +105,153 @@
 
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/addcad"
-        android:layout_below="@+id/card"
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/card2"
+        android:layout_below="@id/card"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:src="@drawable/addcard"
-     />
+        android:layout_height="220dp"
+        android:background="@drawable/cardsbg2"
+
+
+
+        >
+
+        <RelativeLayout
+
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/cardlayers">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/mastercard" />
+
+            <ImageView
+                android:id="@+id/delfete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_delete" />
+
+            <ImageView
+                android:id="@+id/edfit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pencil" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/montserratmedium"
+                android:text="4332  2343  1234  4543"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserratmedium"
+                android:text="02-11-21 08:25"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserratmedium"
+                android:text="Nick White"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_below="@+id/card2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+      >
+
+        <ImageView
+            android:id="@+id/addcariv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/dottedborderrectangle"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.409" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="50dp"
+
+            android:layout_marginLeft="20dp"
+            android:layout_height="50dp"
+            android:src="@drawable/addcard"
+            app:layout_constraintBottom_toBottomOf="@+id/addcariv"
+            app:layout_constraintStart_toStartOf="@+id/addcariv"
+            app:layout_constraintTop_toTopOf="@+id/addcariv" />
+
+        <TextView
+            android:id="@+id/addcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Add Card"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tap"
+
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/addcariv"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/tap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Tap here to add a card"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/addcariv"
+
+            app:layout_constraintEnd_toEndOf="@+id/addcariv"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

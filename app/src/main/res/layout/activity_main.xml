@@ -38,7 +38,7 @@
     <TextView
         android:lineSpacingExtra="16dp"
         android:id="@+id/intro_description"
-        android:textColor="#304169"
+        android:textColor="@color/darkblue"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -79,7 +79,7 @@
         android:layout_marginBottom="46dp"
         android:background="@drawable/finishbuttonstyle"
         android:textColor="@color/white"
-        android:text="Finish"
+        android:text="Turn On"
         android:fontFamily="@font/montserratmedium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

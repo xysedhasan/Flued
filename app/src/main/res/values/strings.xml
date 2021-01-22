@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">Flued</string>
+    <string name="app_name">Fueld</string>
     <string name="title_activity_maps">Map</string>
     <string name="Open">Open</string>
     <string name="Close">Close</string>
+
+    <string name="country_prompt">Choose </string>
+    <string-array name="country_arrays">
+        <item>Select</item>
+        <item>United States</item>
+
+    </string-array>
 </resources>

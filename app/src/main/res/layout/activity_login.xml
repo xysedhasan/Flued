@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:padding="20dp"
     android:id="@+id/parent"
     android:background="@color/white"
     tools:context=".LoginActivity">
@@ -20,7 +21,7 @@
         android:layout_marginRight="8dp"
 
         android:src="@drawable/logo"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -84,7 +85,7 @@
         android:gravity="right"
         android:fontFamily="@font/montserratmedium"
         android:layout_marginRight="36dp"
-        android:text="Forget Password?"
+        android:text="Forgot Password?"
         android:textColor="@color/lightgreen"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,11 +110,11 @@
         android:id="@+id/textVi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="You may also login with"
-        android:textColor="@color/darkblue"
-        android:textSize="18sp"
-        android:fontFamily="@font/montserratregular"
+        android:textColor="@color/lightgrey"
+        android:textSize="16sp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,6 +122,57 @@
 
 
 
+<LinearLayout
+    android:layout_marginTop="17dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:gravity="center"
+
+    >
+    <LinearLayout
+        android:background="@drawable/mycarbg"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/facebook"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@drawable/mycarbg"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/google"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:background="@drawable/mycarbg"
+        android:layout_width="80dp"
+        android:gravity="center"
+        android:layout_height="50dp">
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/apple"/>
+    </LinearLayout>
+</LinearLayout>
 
 
 
@@ -139,15 +191,16 @@
             android:id="@+id/notregister"
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:textColor="@color/darkblue"
+            android:textColor="@color/lightgrey"
             android:text="Don't have an account? "
+            android:textSize="16sp"
             />
 
         <TextView
             android:id="@+id/textview_registered"
 
             android:layout_width="wrap_content"
-            android:paddingLeft="10dp"
+            android:fontFamily="@font/montserratbold"
             android:layout_height="35dp"
             android:textColor="@color/lightgreen"
             android:text="Sign up"

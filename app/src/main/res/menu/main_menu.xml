@@ -4,7 +4,8 @@
     <item
         android:id="@+id/home"
         android:title="Home"
-        android:icon="@drawable/ic_home_nv"
+
+        android:icon="@drawable/home"
         android:textStyle="bold"
 
         android:textSize="25sp"
@@ -13,7 +14,7 @@
     <item
         android:id="@+id/profile"
         android:title="Profile"
-        android:icon="@drawable/ic_profile_circle_24"
+        android:icon="@drawable/manuser"
         android:textStyle="bold"
         android:textSize="25sp"
         />
@@ -21,15 +22,15 @@
     <item
         android:id="@+id/paymentmethods"
         android:title="Payment Methods"
-        android:icon="@drawable/ic_paymentmethod_nav"
+        android:icon="@drawable/creditcard"
         android:textStyle="bold"
         android:textSize="20sp"
         />
 
     <item
         android:id="@+id/scheduledeliveries"
-        android:title="Schedule Deliveries"
-        android:icon="@drawable/ic_scheduledeliveries_nv"
+        android:title="Scheduled Deliveries"
+        android:icon="@drawable/calendar"
         android:textStyle="bold"
         android:textSize="20sp"
         />
@@ -37,37 +38,31 @@
         android:id="@+id/pastorders"
         android:title="Past Orders"
         android:textStyle="bold"
-        android:icon="@drawable/ic_pastorders_nv"
+        android:icon="@drawable/shoppingbag"
         android:textSize="20sp"
         />
 
     <item
         android:id="@+id/tellyourfriend"
         android:title="Tell your Friends"
-        android:icon="@drawable/ic_tellyourfriend_nv"
+        android:icon="@drawable/friends"
         android:textStyle="bold"
         android:textSize="20sp"
         />
     <item
         android:id="@+id/rateapp"
         android:title="Rate App"
-        android:icon="@drawable/ic_rateapp_nv"
+        android:icon="@drawable/star"
         android:textStyle="bold"
         android:textSize="20sp"
         />
     <item
         android:id="@+id/help"
         android:title="Help"
-        android:icon="@drawable/ic_help_nv"
+        android:icon="@drawable/help"
         android:textStyle="bold"
         android:textSize="20sp"
         />
-    <item
-        android:id="@+id/logout"
-        android:title="Logout"
-        android:icon="@drawable/ic_logout_nv"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        />
+
 
 </menu>

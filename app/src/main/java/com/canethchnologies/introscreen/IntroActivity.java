@@ -74,10 +74,10 @@ public class IntroActivity extends AppCompatActivity {
         // fill list screen
 
         final List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("On-demand Fuel Delivery","You can demand fuel anytime of the day anywhere you are",R.drawable.img1));
+        mList.add(new ScreenItem("On-demand Fuel Delivery","You can demand fuel anytime of the day and anywhere you are",R.drawable.img1));
         mList.add(new ScreenItem("Schedule Fuel Delivery","You can schedule fuel delivery at your convenience",R.drawable.img2));
         mList.add(new ScreenItem("Convenient & Revolutionary","Experience the convenience by never having to go to gas station",R.drawable.img3));
-        mList.add(new ScreenItem("Save Time ","Save the time you spent on an extra trip to gas station",R.drawable.img4));
+        mList.add(new ScreenItem("Save Time ","Save the time you spend on an extra trip to the gas station",R.drawable.img4));
         mList.add(new ScreenItem("Environmentally Friendly","We developed a system with zero to minimum impact on environment",R.drawable.img5));
 
         // setup viewpager
